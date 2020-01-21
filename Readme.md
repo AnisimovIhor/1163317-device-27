@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ihor Anisimov](https://up.htmlacademy.ru/htmlcss/27/user/1163317).
-* Преподаватель: [Viktoriya Kovalenko] (https://htmlacademy.ru/profile/id42638).
+* Преподаватель: [Viktoriya Kovalenko](https://htmlacademy.ru/profile/id42638).
 
 ---
 
