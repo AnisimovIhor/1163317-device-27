@@ -69,11 +69,10 @@
     </header>
 
   <main>
-    <h1 class="visually-hedden">Каталог товаров</h1>
+    <h1 class="visually-hidden">Каталог товаров</h1>
       <div>
         <h2>Моноподы для селфи</h2>
           <ul>
-            <!--не понимаю почему ссылку не работает-->
             <li>
               <a href="index.html">Главная</a>
             </li>
@@ -87,18 +86,16 @@
       </div>
 
 
-    <div>
-      <p>
-        Стоимость
-      </p>
-      <ul>
-        <li>
-          от 0
-        </li>
-        <li>
-          до 5000
-        </li>
-      </ul>
+    <div class="price">
+      <p class="price-title">цена</p>
+      <div class="range">
+        <div class="range-block">
+          <div class="range-first"></div>
+          <div class="range-second"></div>
+          <button type="button" class="prev"></button>
+          <button type="button" class="next"></button>
+        </div>
+      </div>
     </div>
     <div>
       <p>
