@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="catalog.html">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -131,7 +130,9 @@
               <img src="img/map-jpg.jpg" width="560" height="220" alt="Карта проезда">
             </a>
           </figure>
-        <button type="button">Напишите нам</button>
+        <a href="#">
+          <button type="button">Напишите нам</button>
+        </a>
       </section>
 
 
@@ -196,6 +197,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                   <path fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/>
                 </svg>
+              </a>
             </li>
             <li>
               <a href="https://w ww.instagram.com/">
@@ -236,9 +238,11 @@
       <p>
         Текст письма
       </p>
-      <textarea name="comment" id="comment-field" cols="30" rows="10">
-        В свободной форме
-      </textarea>
+        <label>
+          <textarea name="comment" id="comment-field" cols="30" rows="10">
+              В свободной форме
+          </textarea>
+        </label>
       </p>
 
       <button form="pop-up">
@@ -247,7 +251,9 @@
         </svg>
       </button>
 
-      <input type="submit">Отправить
+      <button type="submit">
+        Отправить
+      </button>
 
     </form>
 
