@@ -27,12 +27,11 @@
 
         <div class="search-field">
           <form>
-            <button type="submit">
+            <input type="search">
+              <button type="submit">Поиск по сайту</button>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                   <path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/>
                 </svg>
-              <input type="text" placeholder="Поиск по сайту">
-            </button>
           </form>
         </div>
 
@@ -45,9 +44,11 @@
             </a>
           </li>
           <li class="user-link-footer">
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
-              <path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
-            </svg>Вход
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+                <path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+              </svg>Вход
+            </a>
           </li>
           <li class="compere-link">
             <a href="#">
@@ -85,7 +86,7 @@
           </ul>
       </div>
 
-
+    <form action="#" method="post">
     <div class="price">
       <p class="price-title">цена</p>
       <div class="range">
@@ -97,7 +98,6 @@
         </div>
       </div>
     </div>
-    <form action="#" method="post">
       <p>
         Цвет
       </p>
@@ -111,15 +111,13 @@
       <input type="checkbox" checked id="red">
       <label for="pink">Розовый</label>
       <input type="checkbox" id="pink">
-    </form>
-    <form action="#" method="post">
       <p>
         Bluetooth
       </p>
-      <label for="have">Есть</label>
-      <input type="radio" checked id="have">
-      <label for="dont">Нет</label>
-      <input type="radio" id="dont">
+        <label for="have">Есть</label>
+        <input type="radio" id="have" name="radio_button">
+        <label for="dont">Нет</label>
+       <input type="radio" id="dont" name="radio_button">
     </form>
     <div class="product-wrap-1">
       <div class="product-item-1">
@@ -199,9 +197,11 @@
           </a>
         </li>
         <li class="user-link-footer">
+          <a href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
               <path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
             </svg>Вход
+          </a>
         </li>
         <li class="copare-link-footer">
           <a href="#">
