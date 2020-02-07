@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -85,56 +86,58 @@
        </div>
 
        <div>
-         <h1>
+         <h1 class="slider-heading">
            Делай селфи, <br>
            как Бен Стиллер!
          </h1>
-         <p>
+         <p class="slider-paragraph">
            Самая длинная палка для селфи доступна в нашем магазине.
            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
          </p>
        </div>
 
-         <a href="#">
+         <a href="#" class="button-details">
            Подробнее
          </a>
 
       <section>
-        <h2>О нас</h2>
-        <p>
+        <h2 class="about">О нас</h2>
+        <p class="about-description">
             Огромный выбор гаджетов не оставит равнодушным гика,
             который есть в каждом из нас.
         </p>
-        <p>
+        <p class="about-description">
             Мы можем доставить ваш товар в самые отдаленные точки
             России! DEVICE работает со многими транспортными компаниями:
         </p>
-          <ul>
+          <ul class="about-list">
             <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-        <a href="#">Подробнее о нас</a>
+        <a href="#" class="button-details">Подробнее о нас</a>
       </section>
 
       <section>
-        <h2>Контакты</h2>
-        <p>
+        <h2 class="contacts">Контакты</h2>
+        <p class="contacts-description">
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
             проверить работоспособность покупки. Всякое бывает.
         </p>
             <a href="#">
               <img src="img/map-jpg.jpg" width="560" height="220" alt="Карта проезда">
             </a>
-        <a href="#">
-          Напишите нам
-        </a>
+        <p>
+            <a href="#" class="button-details">
+              Напишите нам
+            </a>
+        </p>
       </section>
 
 
      </main>
 
-     <footer>
+     <footer class="footer">
         <a>
           <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
             <defs>
@@ -169,11 +172,11 @@
            </a>
          </li>
        </ul>
-        <p>
+        <p class="footer-adress">
             г. Москва, ул. Строителей, 15
         </p>
         <p>
-          <a href="+74954959595">Тел.: +7 (495) 495-95-95</a>
+          <a href="+74954959595" class="footer-tel">Тел.: +7 (495) 495-95-95</a>
         </p>
         <ul class="site-navigation-footer">
           <li>
@@ -224,14 +227,14 @@
      </footer>
     <form class="pop-up" id="pop-up" action="#">
       <p>
-        <label for="user-name">Ваше имя:</label>
+        <label for="user-name" class="user-name">Ваше имя:</label>
         <input id="user-name" type="text" placeholder="Имя Фамилия">
       </p>
       <p>
-        <label for="user-email">Ваш e-mail:</label>
+        <label for="user-email" class="user-email">Ваш e-mail:</label>
         <input id="user-email" type="text" placeholder="email@example.com">
       </p>
-      <p>
+      <p class="user-comment">
         Текст письма
       </p>
           <textarea name="comment" id="comment-field" cols="30" rows="10">
@@ -245,7 +248,7 @@
         </svg>
       </button>
 
-      <button type="submit">
+      <button type="submit" class="button-submit">
         Отправить
       </button>
 

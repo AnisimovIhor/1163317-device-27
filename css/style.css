@@ -1,13 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-
-  font-family: 'Open Sans';
 }
 
-
-
-
+a {
+  text-decoration: none;
+}
 
 .visually-hidden {
   position: absolute;
@@ -19,3 +17,127 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.site-navigation,
+.Gilroy-font-1 {
+  font-family: Gilroy;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  list-style: none ;
+}
+
+.search-field {
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.3);
+
+}
+
+.user-navigation {
+  list-style: none;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.slider-heading {
+  font-family: Gilroy;
+  font-size: 47px;
+  color: #000000;
+}
+
+.slider-paragraph {
+  font-family: "Open Sans";
+  font-weight: 15px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.button-details,
+.Gilroy-font-1 {
+  font-family: Gilroy;
+  text-transform: uppercase;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+}
+
+.about,
+.contacts {
+  font-family: Gilroy;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 1.02;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+.about-description,
+.contacts-description {
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 2;
+  color: #464646;
+}
+
+.about-list {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 2.5;
+  color: #000000;
+}
+
+.footer {
+  background-color: #464646;
+}
+.user-link-footer {
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 2.4;
+  letter-spacing: 0.15px;
+  color: #FFFFFF;
+}
+
+.site-navigation-footer {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  color: #ffffff;
+}
+
+.user-name,
+.user-email,
+.user-comment {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #000000;
+}
+
+.button-submit {
+  font-family: Gilroy;
+  text-transform: uppercase;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  color: #000000;
+}
+
+.footer-adress,
+.footer-tel {
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 2;
+  color: #ffffff;
+}
+
+
+
+
+
+

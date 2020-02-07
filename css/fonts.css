@@ -1,0 +1,19 @@
+
+
+@font-face {
+  font-family: Gilroy;
+  src: local(Gilroy-ExtraBold),
+    url:(/fonts/to/Gilroyextrabold.ttf) format("truetype"),
+  font-weight: 800;
+}
+
+
+.Gilroy-font-1 {
+  font-family: Gilroy;
+  font-size: 47px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.19;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
