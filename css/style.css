@@ -19,7 +19,7 @@ a {
 }
 
 .site-navigation,
-.Gilroy-font-1 {
+.gilroy-font {
   font-family: Gilroy;
   font-weight: 800;
   text-transform: uppercase;
@@ -60,7 +60,7 @@ a {
 }
 
 .button-details,
-.Gilroy-font-1 {
+.gilroy-font {
   font-family: Gilroy;
   text-transform: uppercase;
   line-height: 1.33;
@@ -95,6 +95,11 @@ a {
 .footer {
   background-color: #464646;
 }
+
+.footer-logo{
+  color: #ffc600;
+}
+
 .user-link-footer {
   font-family: "Open Sans";
   font-size: 15px;
