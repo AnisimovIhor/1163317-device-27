@@ -33,7 +33,7 @@ a {
 }
 
 .search-field {
-  font-family: "Open Sans", sans-serif ;
+  font-family: OpenSans, sans-serif ;
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
@@ -44,7 +44,7 @@ a {
 
 .user-navigation {
   list-style: none;
-  font-family: "Open Sans", sans-serif ;
+  font-family: OpenSans, sans-serif ;
   font-size: 15px;
   font-weight: 300;
 }
@@ -57,8 +57,8 @@ a {
 }
 
 .slider-paragraph {
-  font-family: "Open Sans", sans-serif ;
-  font-weight: 15px;
+  font-family: OpenSans, sans-serif ;
+  font-size: 15px;
   color: #464646;
 }
 
@@ -80,7 +80,7 @@ a {
 }
 
 .slider-advantages-descriptions {
-  font-family: "Open Sans", sans-serif ;
+  font-family: OpenSans, sans-serif ;
   font-size: 13px;
   line-height: 1.54;
   letter-spacing: 0.13px;
@@ -94,6 +94,14 @@ a {
   line-height: 1.33;
   letter-spacing: 0.18px;
   color: #000000;
+}
+
+.advantages-paragraph{
+  font-family: OpenSans, sans-serif;
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 0.15px;
+  color: #464646;
 }
 
 .delivery {
@@ -111,6 +119,9 @@ a {
   background-repeat: no-repeat;
 }
 
+.logo-list {
+  list-style: none;
+}
 .about,
 .contacts {
   font-family: Gilroy, sans-serif ;
@@ -123,7 +134,7 @@ a {
 
 .about-description,
 .contacts-description {
-  font-family: "Open Sans", sans-serif ;
+  font-family: OpenSans, sans-serif ;
   font-size: 15px;
   line-height: 2;
   color: #464646;
@@ -145,7 +156,7 @@ a {
 }
 
 .user-link-footer {
-  font-family: "Open Sans", sans-serif ;
+  font-family: OpenSans, sans-serif ;
   font-size: 15px;
   line-height: 2.4;
   letter-spacing: 0.15px;
@@ -171,7 +182,7 @@ a {
 
 .button-submit {
   font-family: Gilroy, sans-serif;
-text-transform: uppercase;
+  text-transform: uppercase;
   line-height: 1.33;
   letter-spacing: 3.6px;
   color: #000000;
@@ -179,10 +190,37 @@ text-transform: uppercase;
 
 .footer-address,
 .footer-tel {
-  font-family: "Open Sans",sans-serif ;
+  font-family: OpenSans, sans-serif;
   font-size: 15px;
   line-height: 2;
   color: #ffffff;
+}
+
+ /* style for catalog */
+
+.catalog-filter {
+  font-family: Gilroy, sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 3.2px;
+  color: #000000;
+}
+
+.catalog-sort {
+  font-family: Gilroy, sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 3.2px;
+  color: #000000;
+}
+
+.sort-by {
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 
