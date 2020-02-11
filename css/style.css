@@ -23,7 +23,7 @@ a {
   header */
 .site-navigation,
 .gilroy-font {
-  font-family: Gilroy, sans-serif ;
+  font-family: Gilroy, sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   color: #000000;
@@ -33,7 +33,7 @@ a {
 }
 
 .search-field {
-  font-family: OpenSans, sans-serif ;
+  font-family: OpenSans, sans-serif;
   font-size: 15px;
   font-weight: 300;
   line-height: 2;
@@ -44,34 +44,34 @@ a {
 
 .user-navigation {
   list-style: none;
-  font-family: OpenSans, sans-serif ;
+  font-family: OpenSans, sans-serif;
   font-size: 15px;
   font-weight: 300;
 }
 
 /* slider on site */
 .slider-heading {
-  font-family: Gilroy, sans-serif ;
+  font-family: Gilroy, sans-serif;
   font-size: 47px;
   color: #000000;
 }
 
 .slider-paragraph {
-  font-family: OpenSans, sans-serif ;
+  font-family: OpenSans, sans-serif;
   font-size: 15px;
   color: #464646;
 }
 
 .button-details,
 .gilroy-font {
-  font-family: Gilroy, sans-serif ;
+  font-family: Gilroy, sans-serif;
   text-transform: uppercase;
   line-height: 1.33;
   letter-spacing: 3.6px;
 }
 
 .slider-descriprion {
-  font-family: Gilroy, sans-serif ;
+  font-family: Gilroy, sans-serif;
   font-size: 36px;
   line-height: 1.33;
   letter-spacing: 0.36px;
@@ -80,7 +80,7 @@ a {
 }
 
 .slider-advantages-descriptions {
-  font-family: OpenSans, sans-serif ;
+  font-family: OpenSans, sans-serif;
   font-size: 13px;
   line-height: 1.54;
   letter-spacing: 0.13px;
@@ -89,19 +89,27 @@ a {
 }
 
 .category-description {
-  font-family: Gilroy, sans-serif ;
+  font-family: Gilroy, sans-serif;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.18px;
   color: #000000;
 }
 
-.advantages-paragraph{
+.advantages-paragraph {
   font-family: OpenSans, sans-serif;
   font-size: 15px;
   line-height: 2;
   letter-spacing: 0.15px;
   color: #464646;
+}
+
+.advantages-title {
+  font-family: Gilroy, sans-serif;
+  font-size: 47px;
+  line-height: 1.02;
+  letter-spacing: 0.47px;
+  color: #000000;
 }
 
 .delivery {
@@ -122,9 +130,10 @@ a {
 .logo-list {
   list-style: none;
 }
+
 .about,
 .contacts {
-  font-family: Gilroy, sans-serif ;
+  font-family: Gilroy, sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 1.02;
@@ -134,14 +143,14 @@ a {
 
 .about-description,
 .contacts-description {
-  font-family: OpenSans, sans-serif ;
+  font-family: OpenSans, sans-serif;
   font-size: 15px;
   line-height: 2;
   color: #464646;
 }
 
 .about-list {
-  font-family: Gilroy, sans-serif ;
+  font-family: Gilroy, sans-serif;
   font-size: 16px;
   line-height: 2.5;
   color: #000000;
@@ -155,26 +164,34 @@ a {
   color: #ffc600;
 }
 
-.user-link-footer {
-  font-family: OpenSans, sans-serif ;
+.social-media-link {
+  list-style: none;
+}
+
+.user-link-footer,
+.compere-link-footer,
+.cart-link-footer {
+  font-family: OpenSans, sans-serif;
   font-size: 15px;
   line-height: 2.4;
   letter-spacing: 0.15px;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.7);
+  list-style: none;
 }
 
 .site-navigation-footer {
-  font-family: Gilroy, sans-serif ;
+  font-family: Gilroy, sans-serif;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 3.6px;
   color: #ffffff;
+  list-style: none;
 }
 
 .user-name,
 .user-email,
 .user-comment {
-  font-family: Gilroy, sans-serif ;
+  font-family: Gilroy, sans-serif;
   font-size: 18px;
   line-height: 1.33;
   color: #000000;
@@ -196,7 +213,24 @@ a {
   color: #ffffff;
 }
 
- /* style for catalog */
+/* style for catalog */
+
+.catalog-title {
+  font-family: Gilroy, sans-serif;
+  font-size: 42px;
+  line-height: 1.02;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+.catalog-breadcrumbs {
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.14px;
+  color: rgba(0, 0, 0, 0.3);
+  list-style: none;
+}
 
 .catalog-filter {
   font-family: Gilroy, sans-serif;
