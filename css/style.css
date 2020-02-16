@@ -21,6 +21,11 @@ a {
 
 /* site navigation +
   header */
+
+.main-header {
+  background-color: #f7e296;
+}
+
 .site-navigation,
 .gilroy-font {
   font-family: Gilroy, sans-serif;
@@ -156,36 +161,58 @@ a {
   color: #000000;
 }
 
-.footer {
+footer {
   background-color: #464646;
 }
 
 .footer-logo {
-  color: #ffc600;
+  fill: #ffc600;
 }
 
 .social-media-link {
   list-style: none;
+  opacity: 0.3;
 }
 
-.user-link-footer,
+.user-link-footer-log,
 .compere-link-footer,
 .cart-link-footer {
   font-family: OpenSans, sans-serif;
   font-size: 15px;
+  opacity: 0.7;
   line-height: 2.4;
   letter-spacing: 0.15px;
-  color: rgba(255, 255, 255, 0.7);
+  fill: #ffc600;
+  list-style: none;
+}
+
+.user-link-footer {
+  opacity: 0.3;
+  font-family: OpenSans sans-serif;
+  font-size: 15px;
+  line-height: 2;
+  letter-spacing: 0.15px;
   list-style: none;
 }
 
 .site-navigation-footer {
   font-family: Gilroy, sans-serif;
   font-size: 18px;
+  text-transform: uppercase;
   line-height: 1.33;
   letter-spacing: 3.6px;
   color: #ffffff;
   list-style: none;
+}
+
+.site-navigation-contacts,
+.site-navigation-delivery,
+.site-navigation-warranty {
+  color: #ffffff;
+}
+
+.htmlacademy-logo-footer {
+  fill: #ffc600;
 }
 
 .user-name,
@@ -256,6 +283,56 @@ a {
   line-height: 1.29;
   color: rgba(0, 0, 0, 0.3);
 }
+
+.add-to-cart {
+  font-family: Gilroy, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  color: #000000;
+}
+
+.add-to-compare {
+  font-family: OpenSans, sans-serif;
+  font-size: 13px;
+  opacity: 0.5;
+  line-height: 2.77;
+  letter-spacing: 0.13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.product-title {
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.product-price {
+  font-family: Gilroy, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.16px;
+  color: #464646;
+}
+
+.forward-botton,
+.back-button {
+  font-family: Gilroy, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 3.2px;
+  color: #000000;
+}
+
+
+
+
 
 
 
