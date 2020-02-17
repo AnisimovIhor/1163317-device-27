@@ -28,16 +28,16 @@
       </svg>
     </a>
     <ul class="site-navigation">
-      <li><a href="catalog.html">Каталог товаров</a></li>
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Гарантия</a></li>
-      <li><a href="#">Контакты</a></li>
+      <li><a href="catalog.html" class="site-navigation-link">Каталог товаров</a></li>
+      <li><a href="#" class="site-navigation-link">Доставка</a></li>
+      <li><a href="#" class="site-navigation-link">Гарантия</a></li>
+      <li><a href="#" class="site-navigation-link">Контакты</a></li>
     </ul>
 
     <div class="search-field">
       <form>
-        <input type="search">
-        <button type="submit">Найти</button>
+        <input type="search" placeholder="Поиск по сайту" class="search-text">
+        <button type="submit" class="search-button">Найти</button>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
           <path
             d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/>
@@ -46,7 +46,7 @@
     </div>
 
     <ul class="user-navigation">
-      <li class="user-link-log">
+      <li class="user-link">
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
             <path fill="#272525"
@@ -55,7 +55,7 @@
           Валентин Петухов
         </a>
       </li>
-      <li class="user-link-footer">
+      <li class="user-link">
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
             <path fill="#272525"
@@ -93,29 +93,36 @@
     <h2 class="catalog-title">Моноподы для селфи</h2>
     <ul class="catalog-breadcrumbs">
       <li>
-        <a href="index.html">Главная</a>
+        <a href="index.html" class="breadcrumbs-main">Главная</a>
       </li>
       <li>
-        <a href="catalog.html">Каталог товаров</a>
+        <a href="catalog.html" class="breadcrumbs-catalog">Каталог товаров</a>
       </li>
       <li>
-        <a href="#">Моноподы для селфи</a>
+        <a href="#" class="breadcrumbs-item">Моноподы для селфи</a>
       </li>
     </ul>
+    <a href="#" class="switch">
+      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+        <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+      </svg>
+    </a>
+    <a href="#" class="switch">
+      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+        <path fill="#231F20" d="M5.5 10L0 0h11"/>
+      </svg>
+    </a>
   </div>
-  <a href="#">
-    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-      <path fill="#231F20" d="M5.5 0L0 10h11z"/>
-    </svg>
-  </a>
-  <a href="#">
-    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-      <path fill="#231F20" d="M5.5 10L0 0h11"/>
-    </svg>
-  </a>
+
+  <h3 class="catalog-filter">Фильтр:</h3>
+  <h3 class="catalog-sort">Сортировка</h3>
+  <a href="#" class="sort-by-price, sort-by">По цене</a>
+  <a href="#" class="sort-by-type , sort-by">По типу</a>
+  <a href="#" class="sort-by-popularity, sort-by">По популярности</a>
+
   <form action="#" method="post">
     <div class="price">
-      <p class="price-title">цена</p>
+      <p class="price-title">Стоимость</p>
       <div class="range">
         <div class="range-block">
           <div class="range-first"></div>
@@ -125,7 +132,7 @@
         </div>
       </div>
     </div>
-    <p>
+    <p class="color-title">
       Цвет
     </p>
     <label for="black">Черный</label>
@@ -138,7 +145,7 @@
     <input type="checkbox" checked id="red">
     <label for="pink">Розовый</label>
     <input type="checkbox" id="pink">
-    <p>
+    <p class="tehno-title">
       Bluetooth
     </p>
     <label for="have">Есть</label>
@@ -286,7 +293,7 @@
   <div>
     <ul class="social-media-link">
       <li>
-        <a href="https://www.facebook.com/">
+        <a href="https://www.facebook.com/" class="facebook-logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <path fill="#FFF"
                   d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/>
@@ -294,7 +301,7 @@
         </a>
       </li>
       <li>
-        <a href="https://w ww.instagram.com/">
+        <a href="https://w ww.instagram.com/" class="instagram-logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <g fill="#FFF">
               <path
@@ -308,7 +315,7 @@
         </a>
       </li>
       <li>
-        <a href="https://twitter.com/">
+        <a href="https://twitter.com/" class="twitter-logo">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <path fill="#FFF"
                   d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/>
