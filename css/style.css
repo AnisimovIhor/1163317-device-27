@@ -26,6 +26,14 @@ a {
   background-color: #f7e296;
 }
 
+.logo-device:hover {
+  opacity: 0.6;
+}
+
+.logo-device:active {
+  opacity: 0.3;
+}
+
 .site-navigation,
 .gilroy-font {
   font-family: Gilroy, sans-serif;
@@ -44,7 +52,38 @@ a {
   line-height: 2;
   letter-spacing: 0.15px;
   color: rgba(0, 0, 0, 0.3);
+}
 
+.site-navigation-link:hover {
+  opacity: 0.6;
+}
+
+.site-navigation-link:active {
+  opacity: 0.3;
+}
+
+.user-link:hover {
+  opacity: 0.6;
+}
+
+.compere-link:hover {
+  opacity: 0.6;
+}
+
+.cart-link:hover {
+  opacity: 0.6;
+}
+
+.user-link:active {
+  opacity: 0.3;
+}
+
+.compere-link:active {
+  opacity: 0.3;
+}
+
+.cart-link:active {
+  opacity: 0.3;
 }
 
 .user-navigation {
@@ -69,10 +108,25 @@ a {
 
 .button-details,
 .gilroy-font {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
   font-family: Gilroy, sans-serif;
   text-transform: uppercase;
-  line-height: 1.33;
   letter-spacing: 3.6px;
+  text-align: center;
+  background: linear-gradient(#fff 16px, #f0c52e 16px, #f0c52e 24px, #fff 24px);
+  min-height: 40px;
+  width: 222px;
+  padding-top: 8px;
+}
+
+.button-details:hover {
+  background: #f0c52e;
+}
+
+.button-details:active {
+  opacity: 0.3;
 }
 
 .slider-descriprion {
@@ -161,7 +215,7 @@ a {
   color: #000000;
 }
 
-footer {
+.footer {
   background-color: #464646;
 }
 
@@ -285,12 +339,22 @@ footer {
 }
 
 .add-to-cart {
+  display: block;
   font-family: Gilroy, sans-serif;
-  font-size: 12px;
+  font-size: 18px;
+  text-align: center;
   text-transform: uppercase;
   line-height: 1.33;
   letter-spacing: 3.6px;
+  background: linear-gradient(#ffffff 16px, #f0c52e 16px, #f0c52e 24px, #ffffff 24px);
   color: #000000;
+  min-height: 40px;
+  width: 200px;
+  padding-top: 14px;
+}
+
+.add-to-cart:hover {
+  background: #f0c52e;
 }
 
 .add-to-compare {
@@ -321,7 +385,7 @@ footer {
   color: #464646;
 }
 
-.forward-botton,
+.forward-button,
 .back-button {
   font-family: Gilroy, sans-serif;
   font-size: 16px;
