@@ -197,14 +197,15 @@ a {
   list-style: none;
 }
 
+ /*catalog items groups */
+
 .items-groups {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
-.items-link {
+.items-link div {
   display: block;
   width: 160px;
   height: 160px;
@@ -212,11 +213,21 @@ a {
 }
 
 .category-description {
+  margin-top: 39px;
   font-family: Gilroy, sans-serif;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.18px;
   color: #000000;
+}
+
+.items-link:hover div {
+  display: block;
+  background-color: #f0c52e;
+}
+
+.items-link:active div svg {
+  opacity: 0.3;
 }
 
 .category-description:active {
@@ -283,6 +294,36 @@ a {
   color: #000000;
 }
 
+ /*partners logo*/
+
+.partners-logo {
+  display: flex;
+}
+
+.partners-logo ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dji-logo:hover {
+}
+
+.dji-logo:hover {
+  background: url(../img/dji-1-jpg.png);
+}
+
+.sp-gadgets-logo:hover {
+  background: url(../img/s-gadgets-2-jpg.png);
+}
+
+.go-pro-logo:hover {
+  background: url(../img/go-pro2-jpg.png);
+}
+
+.vive-logo:hover {
+  background: url(../img/vive-4-jpg.png);
+}
+
 /*footer*/
 
 .footer {
@@ -294,6 +335,7 @@ a {
   width: 1160px;
   margin: 0 auto;
 }
+
 
 
 /* enter , compare and card link in footer */
