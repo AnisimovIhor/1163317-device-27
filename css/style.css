@@ -234,6 +234,30 @@ a {
   opacity: 0.3;
 }
 
+.align-virtual svg {
+  margin: 52px 32px 53px 31px;
+}
+
+.align-stick svg {
+  margin: 41px 36px 2px 38px;
+}
+
+.align-camera svg {
+  margin: 38px 40px 35px 49px ;
+}
+
+.align-bracelets svg {
+  margin: 50px 25px 45px 28px;
+}
+
+.align-watch svg {
+  margin: 32px 49px 30px 55px;
+}
+
+.align-quadrocopter svg {
+  margin: 49px 15px 42px 13px;
+}
+
 .advantages-paragraph {
   font-family: OpenSans, sans-serif;
   font-size: 15px;
