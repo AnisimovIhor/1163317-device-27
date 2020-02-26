@@ -93,7 +93,7 @@
 </header>
 </header>
 
-<main>
+<main class="container">
   <h1 class="visually-hidden">Каталог товаров</h1>
   <div>
     <h2 class="catalog-title">Моноподы для селфи</h2>
@@ -141,22 +141,22 @@
     <p class="color-title">
       Цвет
     </p>
-    <label for="black">Черный</label>
+    <label for="black" class="checkbox-title">Черный</label>
     <input type="checkbox" checked id="black">
-    <label for="white">Белый</label>
+    <label for="white" class="checkbox-title">Белый</label>
     <input type="checkbox" id="white">
-    <label for="blue">Синий</label>
+    <label for="blue" class="checkbox-title">Синий</label>
     <input type="checkbox" checked id="blue">
-    <label for="red">Красный</label>
+    <label for="red" class="checkbox-title">Красный</label>
     <input type="checkbox" checked id="red">
-    <label for="pink">Розовый</label>
+    <label for="pink" class="checkbox-title">Розовый</label>
     <input type="checkbox" id="pink">
     <p class="tehno-title">
       Bluetooth
     </p>
-    <label for="have">Есть</label>
+    <label for="have" class="checkbox-title">Есть</label>
     <input type="radio" id="have" name="radio_button">
-    <label for="dont">Нет</label>
+    <label for="dont" class="checkbox-title">Нет</label>
     <input type="radio" id="dont" name="radio_button">
 
     <button type="submit" class="button-submit">
@@ -219,18 +219,18 @@
     </div>
   </div>
 
-  <a href="#" class="forward-button">Вперед</a>
-  <a href="#">1</a>
-  <a href="#">2</a>
-  <a href="#">3</a>
   <a href="#" class="back-button">Назад</a>
+  <a href="#" class="numbers">1</a>
+  <a href="#" class="numbers">2</a>
+  <a href="#" class="numbers">3</a>
+  <a href="#" class="forward-button">Вперед</a>
 
 </main>
 
 <footer class="footer">
-  <div class="container-footer">
+  <div class="container">
     <div class="footer-logo-nav">
-      <a class="footer-logo">
+      <a href="index.html" class="footer-logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="163" height="35" viewBox="0 0 163 35">
           <defs>
             <style>
@@ -246,18 +246,18 @@
       </a>
 
       <ul class="user-navigation-footer">
-        <li>
+        <li class="footer-nav-enter">
           <a href="#" class="user-link-footer-log">
             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
               <path
-                    d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+                d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
             </svg>
             Валентин Петухов
           </a>
         </li>
         <li class="footer-nav-user">
           <a href="#" class="user-link-footer">
-            Выйти
+            Войти
           </a>
         </li>
         <li class="footer-nav-compare">
@@ -340,6 +340,7 @@
     </div>
   </div>
 </footer>
+
 </body>
 </html>
 
