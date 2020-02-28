@@ -1,16 +1,59 @@
 @font-face {
   font-family: 'Gilroy';
-  src: url(../fonts/gilroy/Gilroylight.ttf) format('truetype');
+  src: url(../fonts/gilroylight.woff) format('woff');
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url(../fonts/gilroy/Gilroyextrabold.ttf) format('truetype');
+  src: url(../fonts/gilroylight.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Gilroyextrabold';
+  src: url(../fonts/gilroyextrabold.woff) format('woff');
   font-style: normal;
   font-weight: 800;
 }
+
+@font-face {
+  font-family: 'Gilroyextrabold';
+  src: url(../fonts/gilroyextrabold.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/opensans.woff) format('woff');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/opensans.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url(../fonts/opensanslight.woff) format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url(../fonts/opensanslight.woff) format('woff2');
+  font-style: normal;
+  font-weight: 300;
+}
+
 
 body {
   margin: 0;
@@ -39,7 +82,7 @@ a {
 
 .main-header {
   background-image: linear-gradient(#ffffff 40px, #f7e296 40px);
-  padding: 21px 61px 0px 60px;
+  padding: 21px 61px 67px 60px;
   box-sizing: border-box;
 }
 
@@ -51,6 +94,7 @@ a {
 .header-nav {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 38px;
 }
 
 .logo-device:hover {
@@ -64,7 +108,7 @@ a {
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   font-weight: 800;
   margin: 0;
   padding: 0;
@@ -75,7 +119,21 @@ a {
   list-style: none;
 }
 
+.header-navigation-delivery,
+.header-navigation-warranty,
+.header-navigation-contacts:hover {
+  opacity: 0.6;
+}
+
+.header-navigation-delivery,
+.header-navigation-warranty,
+.header-navigation-contacts:active {
+  opacity: 0.3;
+}
+
 .user-navigation {
+  margin: 0;
+  padding: 0;
   display: flex;
   list-style: none;
   font-family: OpenSans, sans-serif;
@@ -85,9 +143,18 @@ a {
   letter-spacing: 0.15px;
 }
 
-.site-navigation-item {
-  margin-right: 326px;
+.user-link {
+  margin-top: 24px;
 }
+
+.compere-link {
+  margin: 24px 41px 0px 221px;
+}
+
+.cart-link {
+  margin-top: 24px;
+}
+
 
 
 .search-field {
@@ -97,7 +164,10 @@ a {
   font-weight: 300;
   line-height: 2;
   letter-spacing: 0.15px;
-  color: rgba(0, 0, 0, 0.3);
+}
+
+::placeholder {
+
 }
 
 /*button search on the site*/
@@ -126,22 +196,6 @@ a {
   line-height: 2;
   letter-spacing: 0.15px;
   color: #000000;
-}
-
-.compere-link {
-  margin-left: 238px;
-}
-
-.cart-link {
-  margin-left: 65px;
-}
-
-.site-navigation-link:hover {
-  opacity: 0.6;
-}
-
-.site-navigation-link:active {
-  opacity: 0.3;
 }
 
 .user-link:hover,
@@ -184,16 +238,11 @@ a {
   margin: 0;
 }
 
-.slider-text {
-  display: flex;
-  flex-direction: column;
-}
-
 .slider-heading {
   width: 100%;
   margin: 0 auto;
   margin-top: 90px;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   font-size: 47px;
   font-weight: 800;
   line-height: 1.19;
@@ -218,7 +267,7 @@ a {
   display: block;
   font-size: 18px;
   line-height: 24px;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -243,7 +292,6 @@ a {
 }
 
 .slider-descriprion {
-  display: flex;
   font-family: Gilroy, sans-serif;
   font-size: 36px;
   line-height: 1.33;
@@ -305,7 +353,8 @@ a {
   width: 160px;
   box-sizing: border-box;
   margin-top: 39px;
-  font-family: Gilroy, sans-serif;
+  margin-bottom: 211px;
+  font-family: Gilroyextrabold, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -325,11 +374,6 @@ a {
 .category-description:active {
   opacity: 0.3;
 }
-
-/*.align-virtual {*/
-/*  display: flex;*/
-/*  align-items: flex-start;*/
-/*}*/
 
 .align-virtual svg {
   margin: 52px 32px 53px 31px;
@@ -355,6 +399,44 @@ a {
   margin: 49px 15px 42px 13px;
 }
 
+ /*deliveri warranty credit*/
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  min-height: 288px;
+  background-color: #e5e5e5;
+  margin-bottom: 94px;
+}
+
+.advantages-title {
+  font-family: Gilroyextrabold, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  color: #000000;
+}
+
+.advantages-header {
+  font-family: Gilroyextrabold, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+.advantages-title ul {
+  padding: 0;
+  margin-left: 140px;
+  list-style: none;
+}
+
+.advantages-title ul li {
+  margin-bottom: 51px;
+}
+
 .advantages-paragraph {
   font-family: OpenSans, sans-serif;
   font-size: 15px;
@@ -364,26 +446,19 @@ a {
   color: #464646;
 }
 
-.advantages-title {
-  font-family: Gilroy, sans-serif;
-  font-size: 47px;
-  font-weight: 800;
-  line-height: 1.02;
-  letter-spacing: 0.47px;
-  color: #000000;
-}
-
 .delivery {
   background-image: url("../img/delivery.svg");
   background-repeat: no-repeat;
 }
 
 .warranty {
+  display: none;
   background-image: url("../img/warranty.svg");
   background-repeat: no-repeat;
 }
 
 .credit {
+  display: none;
   background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
 }
@@ -394,7 +469,7 @@ a {
 
 .about,
 .contacts {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 1.02;
@@ -412,7 +487,7 @@ a {
 }
 
 .about-list {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 2.5;
@@ -562,7 +637,7 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   font-size: 18px;
   font-weight: 800;
   text-transform: uppercase;
@@ -693,7 +768,7 @@ a {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   text-transform: uppercase;
   box-sizing: border-box;
   letter-spacing: 3.6px;
@@ -716,7 +791,7 @@ a {
 /* style for catalog */
 
 .catalog-title {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   font-size: 42px;
   font-weight: 800;
   line-height: 1.02;
@@ -761,7 +836,7 @@ a {
 
 
 .catalog-filter {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 800;
@@ -771,7 +846,7 @@ a {
 }
 
 .catalog-sort {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 800;
@@ -801,7 +876,7 @@ a {
 .price-title,
 .color-title,
 .tehno-title {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   font-size: 18px;
   font-weight: 800;
   ine-height: 1.33;
@@ -823,7 +898,7 @@ a {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   font-size: 18px;
   font-weight: 800;
   text-align: center;
@@ -865,7 +940,7 @@ a {
 }
 
 .product-title {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.33;
@@ -887,7 +962,7 @@ a {
 .forward-button,
 .back-button,
 .numbers {
-  font-family: Gilroy, sans-serif;
+  font-family: Gilroyextrabold, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 1.5;
