@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'OpenSans';
-  src: url(../fonts/opensanslight.woff) format('woff2');
+  src: url(../fonts/opensanslight.woff2) format('woff2'),
        url(../fonts/opensanslight.woff) format('woff');
   font-style: normal;
   font-weight: 300;
@@ -34,6 +34,8 @@
 body {
   margin: 0;
   padding: 0;
+
+  font-family: Gilroy, sans-serif;
 }
 
 a {
@@ -55,6 +57,11 @@ a {
 
 /* site navigation +
   header */
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px;
+}
 
 .main-header {
   background-image: linear-gradient(#ffffff 40px, #f7e296 40px);
@@ -62,11 +69,6 @@ a {
   box-sizing: border-box;
 }
 
-.container {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0px 20px 0px 20px;
-}
 
 .header-nav {
   display: flex;
@@ -93,6 +95,7 @@ a {
 .header-navigation-warranty,
 .header-navigation-contacts {
   font-family: Gilroy, sans-serif;
+  font-size: 18px;
   font-weight: 800;
   margin: 0;
   padding: 0;
@@ -100,6 +103,10 @@ a {
   color: #000000;
   line-height: 1.33;
   letter-spacing: 3.6px;
+}
+
+.site-navigation-link {
+
 }
 
 .user-navigation {
@@ -132,7 +139,7 @@ a {
 
 
 .compere-link {
-  margin: 0px 41px 0px 221px;
+  margin: 0px 45px 0px 225px;
 }
 
 
@@ -195,7 +202,10 @@ a {
 .slider-image-selfie,
 .slider-image-watch,
 .slider-image-quadrocopter {
+  position: relative;
+  bottom: 30px;
   margin-left: 90px;
+
 }
 
 .items-description-selfie,
@@ -203,6 +213,7 @@ a {
 .items-description-quadrocopter {
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(#f7e296 80px,#ffffff 0px, #ffffff 0px, #ffffff 481px);
 }
 
 .items-description-watch,
@@ -220,7 +231,7 @@ a {
 .slider-heading {
   width: 100%;
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 50px;
   font-family: Gilroy, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -231,8 +242,9 @@ a {
 
 .slider-paragraph {
   margin: 0 auto;
-  margin-right: 82px;
-  width: 479px;
+  margin-right: 70px;
+  margin-top: 20px;
+  width: 490px;
   font-family: OpenSans, sans-serif;
   font-weight: 300;
   line-height: 2;
@@ -241,8 +253,7 @@ a {
   color: #464646;
 }
 
-.button-details,
-.gilroy-font {
+.button-details {
   display: block;
   font-size: 18px;
   line-height: 24px;
@@ -267,7 +278,7 @@ a {
 }
 
 .button-slider {
-  margin-top: 48px;
+  margin-top: 45px;
 }
 
 .slider-descriprion {
@@ -282,7 +293,7 @@ a {
 
 .slider-advantages-descriptions {
   display: flex;
-  margin-top: 20px;
+  margin-top: 7px;
   margin-bottom: 117px;
   font-family: OpenSans, sans-serif;
   font-weight: 300;
@@ -298,19 +309,19 @@ a {
 }
 
 .stick-long {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .slider-weight {
-  margin: 60px 80px 0px 81px;
+  margin: 50px 74px 0px 79px;
 }
 
 .slider-material {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .slider-radius {
-  margin: 60px 0px 0px 64px;
+  margin: 50px 0px 0px 64px;
 }
 
 /*catalog items groups */
@@ -319,7 +330,7 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 211px;
+  margin-bottom: 209px;
 }
 
 .items-link div {
@@ -332,7 +343,7 @@ a {
 .category-description {
   width: 160px;
   box-sizing: border-box;
-  margin-top: 39px;
+  margin-top: 30px;
   font-family: Gilroy, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -446,51 +457,13 @@ a {
   background-repeat: no-repeat;
 }
 
-.logo-list {
-  list-style: none;
-}
-
-.about,
-.contacts {
-  font-family: Gilroy, sans-serif;
-  font-weight: 800;
-  font-size: 47px;
-  line-height: 1.02;
-  letter-spacing: 0.47px;
-  color: #000000;
-}
-
-.about-description,
-.contacts-description {
-  font-family: OpenSans, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 2;
-  color: #464646;
-}
-
-.about-list {
-  font-family: Gilroy, sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 2.5;
-  color: #000000;
-}
-
-.contacts-paragraph {
-  font-family: OpenSans, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 2;
-  color: #464646;
-}
-
 /*partners logo*/
 
 .partners-logo {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: 90px;
 }
 
 .partners-logo ul {
@@ -500,6 +473,10 @@ a {
   padding: 0;
   justify-content: space-between;
 }
+.logo-list {
+  list-style: none;
+}
+
 
 .partners-logo a {
   display: flex;
@@ -523,6 +500,102 @@ a {
 
 .vive-logo:hover {
   background: url(../img/vive-4-jpg.png);
+}
+
+
+
+ /*about and contacts */
+
+.about-contacts {
+  display: flex;
+  justify-content: center;
+}
+
+.about,
+.contacts {
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 1.02;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+.about-description,
+.contacts-description {
+  width: 462px;
+  font-family: OpenSans, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  color: #464646;
+}
+
+.about-paragraph {
+  width: 480px;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+
+.about-list {
+  margin-bottom: 55px;
+  font-family: Gilroy, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 2.5;
+  color: #000000;
+  list-style: none;
+}
+
+.button-about {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  letter-spacing: 3.6px;
+  text-align: center;
+  background: linear-gradient(#fff 16px, #f0c52e 16px, #f0c52e 24px, #fff 24px);
+  min-height: 40px;
+  width: 260px;
+  padding-top: 8px;
+  margin-bottom: 80px;
+}
+
+.section-contacts {
+  margin-left: 115px;
+}
+
+.contacts-paragraph {
+  margin-bottom: 40px;
+  font-family: OpenSans, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  color: #464646;
+}
+
+.map {
+  margin-bottom: 70px;
+}
+
+.button-write-us {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  letter-spacing: 3.6px;
+  text-align: center;
+  background: linear-gradient(#fff 16px, #f0c52e 16px, #f0c52e 24px, #fff 24px);
+  min-height: 40px;
+  width: 260px;
+  padding-top: 8px;
+  margin-left: 5px;
 }
 
 /*footer*/
@@ -781,7 +854,7 @@ a {
 /* style for catalog */
 
 .catalog-descriptions {
-  margin-left: 60px; 
+  margin-left: 60px;
 }
 
 .catalog-descriptions ul{
