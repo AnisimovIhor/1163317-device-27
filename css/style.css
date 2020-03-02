@@ -780,6 +780,15 @@ a {
 
 /* style for catalog */
 
+.catalog-descriptions {
+  margin-left: 60px; 
+}
+
+.catalog-descriptions ul{
+  padding-left: 0;
+  display: flex;
+}
+
 .catalog-title {
   font-family: Gilroy, sans-serif;
   font-size: 42px;
