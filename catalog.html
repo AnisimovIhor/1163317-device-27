@@ -94,8 +94,9 @@
 </header>
 
 <main class="container">
-  <h1 class="visually-hidden">Каталог товаров</h1>
-  <div>
+
+  <div class="catalog-descriptions">
+    <h1 class="visually-hidden">Каталог товаров</h1>
     <h2 class="catalog-title">Моноподы для селфи</h2>
     <ul class="catalog-breadcrumbs">
       <li>
@@ -108,123 +109,131 @@
         <a href="#" class="breadcrumbs-item">Моноподы для селфи</a>
       </li>
     </ul>
-    <a href="#" class="switch">
-      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-        <path fill="#231F20" d="M5.5 0L0 10h11z"/>
-      </svg>
-    </a>
-    <a href="#" class="switch">
-      <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-        <path fill="#231F20" d="M5.5 10L0 0h11"/>
-      </svg>
-    </a>
   </div>
 
-  <h3 class="catalog-filter">Фильтр:</h3>
+
   <h3 class="catalog-sort">Сортировка</h3>
   <a href="#" class="sort-by-price sort-by">По цене</a>
   <a href="#" class="sort-by-type sort-by">По типу</a>
   <a href="#" class="sort-by-popularity sort-by">По популярности</a>
+  <a href="#" class="switch">
+    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+      <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+    </svg>
+  </a>
+  <a href="#" class="switch">
+    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+      <path fill="#231F20" d="M5.5 10L0 0h11"/>
+    </svg>
+  </a>
+  <section class="filter">
+    <h3 class="catalog-filter">Фильтр:</h3>
+    <form action="#" method="post">
+      <div class="price">
+        <p class="price-title">Стоимость</p>
+        <div class="range">
+          <div class="range-block">
+            <div class="range-first"></div>
+            <div class="range-second"></div>
+            <button type="button" class="prev"></button>
+            <button type="button" class="next"></button>
+          </div>
+        </div>
+      </div>
+      <p class="color-title">
+        Цвет
+      </p>
+      <label for="black" class="checkbox-title">Черный</label>
+      <input type="checkbox" checked id="black">
+      <label for="white" class="checkbox-title">Белый</label>
+      <input type="checkbox" id="white">
+      <label for="blue" class="checkbox-title">Синий</label>
+      <input type="checkbox" checked id="blue">
+      <label for="red" class="checkbox-title">Красный</label>
+      <input type="checkbox" checked id="red">
+      <label for="pink" class="checkbox-title">Розовый</label>
+      <input type="checkbox" id="pink">
+      <p class="tehno-title">
+        Bluetooth
+      </p>
+      <label for="have" class="checkbox-title">Есть</label>
+      <input type="radio" id="have" name="radio_button">
+      <label for="dont" class="checkbox-title">Нет</label>
+      <input type="radio" id="dont" name="radio_button">
 
-  <form action="#" method="post">
-    <div class="price">
-      <p class="price-title">Стоимость</p>
-      <div class="range">
-        <div class="range-block">
-          <div class="range-first"></div>
-          <div class="range-second"></div>
-          <button type="button" class="prev"></button>
-          <button type="button" class="next"></button>
+      <button type="submit" class="button-submit">
+        Показать
+      </button>
+    </form>
+  </section>
+
+  <section>
+    <div>
+      <div class="product-wrap">
+        <div class="product-item">
+          <img src="img/item-1-jpg.jpg" alt="">
+          <div class="product-buttons">
+            <a href="#" class="add-to-cart">В корзину</a>
+            <a href="#" class="add-to-compare">Добавить к сравнению</a>
+          </div>
+        </div>
+        <div class="product-title">
+          <a href="#">Любительская селфи-палка</a>
+          <span class="product-price">500 руб.</span>
+        </div>
+      </div>
+
+      <div class="product-wrap">
+        <div class="product-item">
+          <img src="img/item-2-jpg.jpg" alt="">
+          <div class="product-buttons">
+            <a href="#" class="add-to-cart">В корзину</a>
+            <a href="#" class="add-to-compare">Добавить к сравнению</a>
+          </div>
+        </div>
+        <div class="product-title">
+          <a href="#">Профессиональная селфи-палка</a>
+          <span class="product-price">1 500 руб.</span>
+        </div>
+      </div>
+
+      <div class="product-wrap">
+        <div class="product-item">
+          <img src="img/item-3-jpg.jpg" alt="">
+          <div class="product-buttons">
+            <a href="#" class="add-to-cart">В корзину</a>
+            <a href="#" class="add-to-compare">Добавить к сравнению</a>
+          </div>
+        </div>
+        <div class="product-title">
+          <a href="#">Непотопляемая селфи-палка</a>
+          <span class="product-price">2 500 руб.</span>
+        </div>
+      </div>
+
+      <div class="product-wrap">
+        <div class="product-item">
+          <img src="img/item-4-jpg.jpg" alt="">
+          <div class="product-buttons">
+            <a href="#" class="add-to-cart">В корзину</a>
+            <a href="#" class="add-to-compare">Добавить к сравнению</a>
+          </div>
+        </div>
+        <div class="product-title">
+          <a href="#">Селфи-палка «Следуй за мной»</a>
+          <span class="product-price">4 900 руб.</span>
         </div>
       </div>
     </div>
-    <p class="color-title">
-      Цвет
-    </p>
-    <label for="black" class="checkbox-title">Черный</label>
-    <input type="checkbox" checked id="black">
-    <label for="white" class="checkbox-title">Белый</label>
-    <input type="checkbox" id="white">
-    <label for="blue" class="checkbox-title">Синий</label>
-    <input type="checkbox" checked id="blue">
-    <label for="red" class="checkbox-title">Красный</label>
-    <input type="checkbox" checked id="red">
-    <label for="pink" class="checkbox-title">Розовый</label>
-    <input type="checkbox" id="pink">
-    <p class="tehno-title">
-      Bluetooth
-    </p>
-    <label for="have" class="checkbox-title">Есть</label>
-    <input type="radio" id="have" name="radio_button">
-    <label for="dont" class="checkbox-title">Нет</label>
-    <input type="radio" id="dont" name="radio_button">
 
-    <button type="submit" class="button-submit">
-      Показать
-    </button>
-  </form>
-  <div class="product-wrap">
-    <div class="product-item">
-      <img src="img/item-1-jpg.jpg" alt="">
-      <div class="product-buttons">
-        <a href="#" class="add-to-cart">В корзину</a>
-        <a href="#" class="add-to-compare">Добавить к сравнению</a>
-      </div>
+    <div>
+      <a href="#" class="back-button">Назад</a>
+      <a href="#" class="numbers">1</a>
+      <a href="#" class="numbers">2</a>
+      <a href="#" class="numbers">3</a>
+      <a href="#" class="forward-button">Вперед</a>
     </div>
-    <div class="product-title">
-      <a href="#">Любительская селфи-палка</a>
-      <span class="product-price">500 руб.</span>
-    </div>
-  </div>
-
-  <div class="product-wrap">
-    <div class="product-item">
-      <img src="img/item-2-jpg.jpg" alt="">
-      <div class="product-buttons">
-        <a href="#" class="add-to-cart">В корзину</a>
-        <a href="#" class="add-to-compare">Добавить к сравнению</a>
-      </div>
-    </div>
-    <div class="product-title">
-      <a href="#">Профессиональная селфи-палка</a>
-      <span class="product-price">1 500 руб.</span>
-    </div>
-  </div>
-
-  <div class="product-wrap">
-    <div class="product-item">
-      <img src="img/item-3-jpg.jpg" alt="">
-      <div class="product-buttons">
-        <a href="#" class="add-to-cart">В корзину</a>
-        <a href="#" class="add-to-compare">Добавить к сравнению</a>
-      </div>
-    </div>
-    <div class="product-title">
-      <a href="#">Непотопляемая селфи-палка</a>
-      <span class="product-price">2 500 руб.</span>
-    </div>
-  </div>
-
-  <div class="product-wrap">
-    <div class="product-item">
-      <img src="img/item-4-jpg.jpg" alt="">
-      <div class="product-buttons">
-        <a href="#" class="add-to-cart">В корзину</a>
-        <a href="#" class="add-to-compare">Добавить к сравнению</a>
-      </div>
-    </div>
-    <div class="product-title">
-      <a href="#">Селфи-палка «Следуй за мной»</a>
-      <span class="product-price">4 900 руб.</span>
-    </div>
-  </div>
-
-  <a href="#" class="back-button">Назад</a>
-  <a href="#" class="numbers">1</a>
-  <a href="#" class="numbers">2</a>
-  <a href="#" class="numbers">3</a>
-  <a href="#" class="forward-button">Вперед</a>
-
+  </section>
 </main>
 
 <footer class="footer">
@@ -283,9 +292,9 @@
     </div>
 
     <div class="footer-contacts-nav">
-      <p class="footer-address">
+      <address class="footer-address">
         г. Москва, ул. Строителей, 15
-      </p>
+      </address>
 
       <ul class="site-navigation-footer">
         <li><a href="#" class="site-navigation-delivery">Доставка</a></li>
