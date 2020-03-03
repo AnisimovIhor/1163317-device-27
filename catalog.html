@@ -93,28 +93,32 @@
 </header>
 </header>
 
-<main class="container">
+<main>
 
-  <div class="catalog-descriptions">
+  <div class="catalog-descriptions container">
     <h1 class="visually-hidden">Каталог товаров</h1>
     <h2 class="catalog-title">Моноподы для селфи</h2>
     <ul class="catalog-breadcrumbs">
       <li>
         <a href="index.html" class="breadcrumbs-main">Главная</a>
         <a href="#">
+          <span class="arrow">
           <svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7">
             <path
               d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z"/>
           </svg>
+          </span>
         </a>
       </li>
       <li>
         <a href="catalog.html" class="breadcrumbs-catalog">Каталог товаров</a>
         <a href="#">
+          <span class="arrow-catalog">
           <svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7">
             <path
               d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z"/>
           </svg>
+          </span>
         </a>
       </li>
       <li>
@@ -152,19 +156,23 @@
           </div>
         </div>
       </div>
-      <p class="color-title">
-        Цвет
-      </p>
-      <label for="black" class="checkbox-title">Черный</label>
-      <input type="checkbox" checked id="black">
-      <label for="white" class="checkbox-title">Белый</label>
-      <input type="checkbox" id="white">
-      <label for="blue" class="checkbox-title">Синий</label>
-      <input type="checkbox" checked id="blue">
-      <label for="red" class="checkbox-title">Красный</label>
-      <input type="checkbox" checked id="red">
-      <label for="pink" class="checkbox-title">Розовый</label>
-      <input type="checkbox" id="pink">
+
+      <div class="filter-color">
+        <p class="color-title">
+          Цвет
+        </p>
+        <label for="black" class="checkbox-title">Черный</label>
+        <input type="checkbox" checked id="black">
+        <label for="white" class="checkbox-title">Белый</label>
+        <input type="checkbox" id="white">
+        <label for="blue" class="checkbox-title">Синий</label>
+        <input type="checkbox" checked id="blue">
+        <label for="red" class="checkbox-title">Красный</label>
+        <input type="checkbox" checked id="red">
+        <label for="pink" class="checkbox-title">Розовый</label>
+        <input type="checkbox" id="pink">
+      </div>
+      <div class="filter-bluetooth">
       <p class="tehno-title">
         Bluetooth
       </p>
@@ -172,6 +180,7 @@
       <input type="radio" id="have" name="radio_button">
       <label for="dont" class="checkbox-title">Нет</label>
       <input type="radio" id="dont" name="radio_button">
+      </div>
 
       <button type="submit" class="button-submit">
         Показать
