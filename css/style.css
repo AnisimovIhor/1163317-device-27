@@ -734,24 +734,24 @@ a {
   display: flex;
   margin: 0;
   list-style: none;
-  padding-top: 73px;
+  padding-top: 60px;
 }
 
 .user-link-main {
-  margin-right: 44px;
+  margin-right: 45px;
 }
 
 .user-link-footer-log {
   margin-right: 20px;
 }
-
+x
 .user-link-footer {
   opacity: 0.3;
   margin-right: 44px;
 }
 
 .compere-link-footer {
-  margin-right: 41px;
+  margin-right: 40px;
 }
 
 /*footer logo */
@@ -776,7 +776,7 @@ a {
 
 .footer-contacts-nav {
   display: flex;
-  margin-top: 54px;
+  margin-top: 38px;
 }
 
 .site-navigation-footer {
@@ -812,15 +812,15 @@ a {
 }
 
 .site-navigation-footer {
-  margin: 0 0 0 166px;
+  margin: 0 0 0 164px;
 }
 
 .site-navigation-warranty {
-  margin-left: 38px;
+  margin-left: 34px;
 }
 
 .site-navigation-contacts {
-  margin-left: 38px;
+  margin-left: 33px;
 }
 
 /*address and telephone of a company */
@@ -851,8 +851,8 @@ a {
 }
 
 .social-and-logo ul {
-  padding-left: 0;
-  padding-top: 69px;
+  padding-left: 21px;
+  padding-top: 55px;
 }
 
 .social-media-link {
@@ -882,7 +882,11 @@ a {
 }
 
 .facebook-logo {
-  margin-right: 23px;
+  margin-left: 3px;
+}
+
+.instagram-logo {
+  margin-left: 23px;
 }
 
 .twitter-logo {
