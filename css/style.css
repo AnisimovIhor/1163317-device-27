@@ -65,7 +65,7 @@ a {
 
 .main-header {
   background-image: linear-gradient(#ffffff 40px, #f7e296 40px);
-  padding: 21px 61px 67px 60px;
+  padding: 21px 60px 67px 60px;
   box-sizing: border-box;
 }
 
@@ -105,13 +105,13 @@ a {
   letter-spacing: 3.6px;
 }
 
-.header-navigation-delivery {
+.header-link-delivery {
   margin-left: 295px;
   margin-right: 38px;
 }
 
-.header-navigation-warranty {
-  margin-right: 100px;
+.header-link-contacts {
+  margin-left: auto;
 }
 
 .user-navigation {
@@ -234,6 +234,14 @@ a {
   opacity: 0.3;
 }
 
+.strip {
+  width: 95px;
+  position: absolute;
+  right: 840px;
+  top: 265px;
+  border: solid 3px #ffffff;
+}
+
 
 /* slider on site */
 
@@ -317,6 +325,17 @@ a {
 
 .button-slider {
   margin-top: 45px;
+}
+
+.slider-button {
+  padding: 0;
+  position: relative;
+  bottom: 275px;
+  left: 1000px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
 .slider-descriprion {
@@ -448,9 +467,11 @@ a {
 }
 
 .advantages-container {
+  display: flex;
   position: relative;
-  left: 200px;
-  bottom: 180px;
+  bottom: 230px;
+  left: 202px;
+  padding: 0;
 }
 
 .advantages-title {
@@ -464,6 +485,8 @@ a {
 }
 
 .advantages-header {
+  margin: 0;
+  margin-bottom: 30px;
   font-family: Gilroy, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -485,6 +508,7 @@ a {
 }
 
 .advantages-paragraph {
+  margin: 0;
   width: 426px;
   font-family: OpenSans, sans-serif;
   font-size: 15px;
@@ -496,7 +520,7 @@ a {
 
 .delivery {
   background-image: url("../img/delivery.svg");
-  background-position: right 265px bottom 60px;
+  background-position: right top;
   background-repeat: no-repeat;
 }
 
