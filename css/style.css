@@ -373,6 +373,10 @@ a {
   margin-top: 45px;
 }
 
+.slider-all {
+  position: relative;
+}
+
 .slider-buttons {
   position: absolute;
 }
@@ -380,8 +384,6 @@ a {
 .slider-button {
   padding: 0;
   position: relative;
-  bottom: 275px;
-  left: 1000px;
   width: 12px;
   height: 12px;
   border: 1px solid black;
@@ -1069,9 +1071,12 @@ a {
 
 /* style for catalog */
 
+.catalog-wrapper {
+  background: linear-gradient(left, #ebebeb 0%, #ebebeb 50%, #ffffff 51%, #ffffff 100%);
+}
+
 .catalog-container {
   display: flex;
-  background: linear-gradient(left, #ebebeb 0%, #ebebeb 50%, #ffffff 51%, #ffffff 100%);
 }
 
 .catalog-wrap {
@@ -1080,15 +1085,112 @@ a {
   flex-wrap: wrap;
 }
 
-/*.product-wrap {*/
-/*  display: flex;*/
-/*  flex-wrap: wrap;*/
-/*}*/
+/*catalog filter */
 
-.catalog-descriptions {
-  margin: 0 auto;
-  padding-left: 80px;
+.filter-item {
+  margin: 0;
+  padding: 0;
+
+  border: none;
 }
+
+.range-filter {
+  width: 216px;
+}
+
+.filter-item legend {
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.price-controls label {
+  font-family: Gilroy, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  opacity: 0.2;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  background-color: #ebebeb;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: #dbdbdb;
+}
+
+.range-controls .bar {
+  width: 60%;
+  height: 2px;
+
+  background: #91c92f;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+
+  text-align: center;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+}
+
+
 
 .catalog-descriptions ul{
   padding-left: 0;
@@ -1097,8 +1199,9 @@ a {
 
 .catalog-title {
   margin-top: 40px;
-  margin-bottom: 25px;
   margin-right: 15px;
+  margin-bottom: 25px;
+  margin-left: 60px;
   font-family: Gilroy, sans-serif;
   font-size: 47px;
   font-weight: 800;
@@ -1117,6 +1220,7 @@ a {
   opacity: 0.3;
   list-style: none;
   margin-bottom: 52px;
+  margin-left: 60px;
 }
 
 .arrow {
@@ -1171,6 +1275,12 @@ a {
   flex-direction: column;
 }
 
+.catalog-filter-color {
+  margin: 0;
+  padding: 0;
+  background-color: #d9d9d9;
+}
+
 .catalog-filter {
   font-family: Gilroy, sans-serif;
   background: #d9d9d9;
@@ -1180,6 +1290,11 @@ a {
   line-height: 1.5;
   letter-spacing: 3.2px;
   color: #000000;
+}
+
+.sorting-by {
+  display: flex;
+  list-style: none;
 }
 
 .sorting {
@@ -1234,6 +1349,7 @@ a {
 }
 
 .checkbox-title {
+  position: relative;
   padding-left: 30px;
   font-family: OpenSans, sans-serif;
   font-size: 14px;
@@ -1252,7 +1368,7 @@ a {
 
 .check-box {
   position: absolute;
-  right: 100%;
+  left: 0;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");

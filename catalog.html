@@ -105,53 +105,62 @@
 
 <main>
 
-  <div class="catalog-descriptions container">
-    <h1 class="visually-hidden">Каталог товаров</h1>
-    <h2 class="catalog-title">Моноподы для селфи</h2>
-    <ul class="catalog-breadcrumbs">
-      <li>
-        <a href="index.html" class="breadcrumbs-main">Главная</a>
-        <a href="#">
+  <div class="catalog-wrapper">
+    <div class="catalog-descriptions container">
+      <h1 class="visually-hidden">Каталог товаров</h1>
+      <h2 class="catalog-title">Моноподы для селфи</h2>
+      <ul class="catalog-breadcrumbs">
+        <li>
+          <a href="index.html" class="breadcrumbs-main">Главная</a>
+          <a href="#">
           <span class="arrow">
           <svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7">
             <path
               d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z"/>
           </svg>
           </span>
-        </a>
-      </li>
-      <li>
-        <a href="catalog.html" class="breadcrumbs-catalog">Каталог товаров</a>
-        <a href="#">
+          </a>
+        </li>
+        <li>
+          <a href="catalog.html" class="breadcrumbs-catalog">Каталог товаров</a>
+          <a href="#">
           <span class="arrow-catalog">
           <svg xmlns="http://www.w3.org/2000/svg" width="4" height="7" viewBox="0 0 4 7">
             <path
               d="M3.83 3.132L.861.144a.5.5 0 0 0-.713 0 .508.508 0 0 0 0 .718l2.611 2.629L.148 6.12a.51.51 0 0 0 0 .72.5.5 0 0 0 .713 0L3.83 3.852a.51.51 0 0 0 .147-.36.507.507 0 0 0-.147-.36z"/>
           </svg>
           </span>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="breadcrumbs-item">Моноподы для селфи</a>
-      </li>
-    </ul>
-  </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="breadcrumbs-item">Моноподы для селфи</a>
+        </li>
+      </ul>
+    </div>
 
-  <div class="catalog-container container">
-    <section class="filter">
-      <h3 class="catalog-filter">Фильтр:</h3>
-      <form action="#" method="post">
-        <div class="price">
-          <p class="price-title">Стоимость</p>
-          <div class="range">
-            <div class="range-block">
-              <div class="range-first"></div>
-              <div class="range-second"></div>
-              <button type="button" class="prev"></button>
-              <button type="button" class="next"></button>
-            </div>
-          </div>
+    <div class="catalog-container container">
+      <section class="filter">
+        <div class="catalog-filter-color">
+          <h3 class="catalog-filter">Фильтр:</h3>
         </div>
+        <form action="#" method="get">
+          <fieldset class="filter-item">
+            <legend>Стоимость</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="number" value="5000"></label>
+              </div>
+            </div>
+          </fieldset>
+        </form>
 
         <div class="filter-color">
           <p class="color-title">
@@ -206,95 +215,97 @@
         <button type="submit" class="button-submit">
           Показать
         </button>
-      </form>
-    </section>
 
-    <section>
+      </section>
 
-      <div class="sorting">
-        <h3 class="catalog-sort">Сортировка</h3>
+      <section>
 
-        <a href="#" class="sort-by-price sort-by">По цене</a>
-        <a href="#" class="sort-by-type sort-by">По типу</a>
-        <a href="#" class="sort-by-popularity sort-by">По популярности</a>
-        <a href="#" class="switch">
-          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-            <path fill="#231F20" d="M5.5 0L0 10h11z"/>
-          </svg>
-        </a>
-        <a href="#" class="switch-last">
-          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-            <path fill="#231F20" d="M5.5 10L0 0h11"/>
-          </svg>
-        </a>
-      </div>
+        <div class="sorting">
+          <h3 class="catalog-sort">Сортировка</h3>
+          <ul class="sorting-by">
+            <li><a href="#" class="sort-by-price sort-by">По цене</a></li>
+            <li><a href="#" class="sort-by-type sort-by">По типу</a></li>
+            <li><a href="#" class="sort-by-popularity sort-by">По популярности</a></li>
+            <li><a href="#" class="switch">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+              </svg>
+            </a></li>
+            <li><a href="#" class="switch-last">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 10L0 0h11"/>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
 
-      <div class="catalog-wrap">
-        <div class="product-wrap">
-          <div class="product-item">
-            <img src="img/item-1-jpg.jpg" alt="">
-            <div class="product-buttons">
-              <a href="#" class="add-to-cart">В корзину</a>
-              <a href="#" class="add-to-compare">Добавить к сравнению</a>
+        <div class="catalog-wrap">
+          <div class="product-wrap">
+            <div class="product-item">
+              <img src="img/item-1-jpg.jpg" alt="">
+              <div class="product-buttons">
+                <a href="#" class="add-to-cart">В корзину</a>
+                <a href="#" class="add-to-compare">Добавить к сравнению</a>
+              </div>
+            </div>
+            <div class="product-title">
+              <a href="#">Любительская селфи-палка</a>
+              <span class="product-price">500 руб.</span>
             </div>
           </div>
-          <div class="product-title">
-            <a href="#">Любительская селфи-палка</a>
-            <span class="product-price">500 руб.</span>
+
+          <div class="product-wrap">
+            <div class="product-item">
+              <img src="img/item-2-jpg.jpg" alt="">
+              <div class="product-buttons">
+                <a href="#" class="add-to-cart">В корзину</a>
+                <a href="#" class="add-to-compare">Добавить к сравнению</a>
+              </div>
+            </div>
+            <div class="product-title">
+              <a href="#">Профессиональная селфи-палка</a>
+              <span class="product-price">1 500 руб.</span>
+            </div>
+          </div>
+
+          <div class="product-wrap">
+            <div class="product-item">
+              <img src="img/item-3-jpg.jpg" alt="">
+              <div class="product-buttons">
+                <a href="#" class="add-to-cart">В корзину</a>
+                <a href="#" class="add-to-compare">Добавить к сравнению</a>
+              </div>
+            </div>
+            <div class="product-title">
+              <a href="#">Непотопляемая селфи-палка</a>
+              <span class="product-price">2 500 руб.</span>
+            </div>
+          </div>
+
+          <div class="product-wrap">
+            <div class="product-item">
+              <img src="img/item-4-jpg.jpg" alt="">
+              <div class="product-buttons">
+                <a href="#" class="add-to-cart">В корзину</a>
+                <a href="#" class="add-to-compare">Добавить к сравнению</a>
+              </div>
+            </div>
+            <div class="product-title">
+              <a href="#">Селфи-палка «Следуй за мной»</a>
+              <span class="product-price">4 900 руб.</span>
+            </div>
           </div>
         </div>
 
-        <div class="product-wrap">
-          <div class="product-item">
-            <img src="img/item-2-jpg.jpg" alt="">
-            <div class="product-buttons">
-              <a href="#" class="add-to-cart">В корзину</a>
-              <a href="#" class="add-to-compare">Добавить к сравнению</a>
-            </div>
-          </div>
-          <div class="product-title">
-            <a href="#">Профессиональная селфи-палка</a>
-            <span class="product-price">1 500 руб.</span>
-          </div>
+        <div>
+          <a href="#" class="back-button">Назад</a>
+          <a href="#" class="numbers">1</a>
+          <a href="#" class="numbers">2</a>
+          <a href="#" class="numbers">3</a>
+          <a href="#" class="forward-button">Вперед</a>
         </div>
-
-        <div class="product-wrap">
-          <div class="product-item">
-            <img src="img/item-3-jpg.jpg" alt="">
-            <div class="product-buttons">
-              <a href="#" class="add-to-cart">В корзину</a>
-              <a href="#" class="add-to-compare">Добавить к сравнению</a>
-            </div>
-          </div>
-          <div class="product-title">
-            <a href="#">Непотопляемая селфи-палка</a>
-            <span class="product-price">2 500 руб.</span>
-          </div>
-        </div>
-
-        <div class="product-wrap">
-          <div class="product-item">
-            <img src="img/item-4-jpg.jpg" alt="">
-            <div class="product-buttons">
-              <a href="#" class="add-to-cart">В корзину</a>
-              <a href="#" class="add-to-compare">Добавить к сравнению</a>
-            </div>
-          </div>
-          <div class="product-title">
-            <a href="#">Селфи-палка «Следуй за мной»</a>
-            <span class="product-price">4 900 руб.</span>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <a href="#" class="back-button">Назад</a>
-        <a href="#" class="numbers">1</a>
-        <a href="#" class="numbers">2</a>
-        <a href="#" class="numbers">3</a>
-        <a href="#" class="forward-button">Вперед</a>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 </main>
 
