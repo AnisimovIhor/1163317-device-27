@@ -103,21 +103,28 @@ a {
 }
 
 .site-navigation-catalog {
-  width: 1100px;
+  width: 1160px;
   min-height: 163px;
   display: flex;
   position: absolute;
+  box-sizing: border-box;
 
   visibility: hidden;
   background-color: #f7e296;
 
+  z-index: 1;
+}
+
+.site-navigation-catalog:hover {
+  visibility: visible;
 }
 
 .site-navigation-link:hover + .site-navigation-catalog {
   visibility: visible;
 
-  width: 1100px;
+  width: 1160px;
   min-height: 163px;
+  box-sizing: border-box;
 
   background-color: #f7e296;
 }
