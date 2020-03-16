@@ -97,6 +97,7 @@ a {
 }
 
 .site-navigation {
+  position: relative;
   display: flex;
   padding-left: 0;
   list-style: none;
@@ -104,10 +105,12 @@ a {
 
 .site-navigation-catalog {
   width: 1160px;
+  margin: 0 auto;
   min-height: 163px;
   display: flex;
+
   position: absolute;
-  box-sizing: border-box;
+  left: -60px;
 
   visibility: hidden;
   background-color: #f7e296;
@@ -140,6 +143,10 @@ a {
   letter-spacing: 0.15px;
 
   list-style: none;
+}
+
+.navigation-catalog-virtual {
+  margin-left: 60px;
 }
 
 .navigation-catalog-list {
@@ -254,30 +261,12 @@ a {
 }
 
 .search-field {
-
-}
-
-.search-icon {
+  background-image: url("../img/search.svg");
   position: relative;
-  right: 446px;
-  top: 3px;
+  background-repeat: no-repeat;
+  background-position: 1% 65%;
+
 }
-
-
-/*.search-field input::placeholder {*/
-/*  font-family: OpenSans, sans-serif;*/
-/*  font-size: 15px;*/
-/*  font-weight: 300;*/
-/*  line-height: 2;*/
-/*  letter-spacing: 0.15px;*/
-/*  opacity: 0.3;*/
-/*}*/
-
-/*.search-field::placeholder:hover {*/
-/*  opacity: 0.6;*/
-/*}*/
-
-/*button search on the site*/
 
 .search-field-border {
   display: flex;
@@ -553,15 +542,15 @@ a {
 }
 
 .stick-long {
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .slider-weight {
-  margin: 50px 74px 0px 79px;
+  margin: 45px 74px 0px 79px;
 }
 
 .slider-material {
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .slider-radius {
@@ -738,6 +727,36 @@ a {
   background-image: url("../img/credit.svg");
   background-position: 89% 80%;
   background-repeat: no-repeat;
+}
+
+.about,
+.contacts {
+  margin-bottom: 45px;
+}
+
+.about-list-line:before,
+.about-list-avtotrading:before,
+.about-list-ecspedition:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+
+  width: 8px;
+  height: 8px;
+  border: solid 2px #e5e5e5;
+  border-radius: 50%;
+}
+
+.about-list-line:before {
+  top: 360px;
+}
+
+.about-list-avtotrading:before {
+  top: 400px;
+}
+
+.about-list-ecspedition:before {
+  top: 440px;
 }
 
 .advantages-title-delivery-center {
@@ -950,7 +969,7 @@ a {
 
 .about-paragraph {
   width: 480px;
-  margin-top: 35px;
+  margin-top: 30px;
   margin-bottom: 65px;
 }
 
@@ -1285,7 +1304,7 @@ a {
   box-sizing: border-box;
   letter-spacing: 3.6px;
   text-align: center;
-  background: linear-gradient(#fff 16px, #f0c52e 16px, #f0c52e 24px, #fff 24px);
+  background: linear-gradient(transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
   min-height: 40px;
   width: 222px;
   padding-top: 3px;
@@ -1303,7 +1322,10 @@ a {
 /* style for catalog */
 
 .catalog-wrapper {
-  background: linear-gradient(left, #ebebeb 0%, #ebebeb 50%, #ffffff 51%, #ffffff 100%);
+  position: relative;
+
+  background: rgb(235, 235, 235);
+  background: linear-gradient(90deg, rgba(235, 235, 235, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
 }
 
 .catalog-container {
@@ -1465,18 +1487,6 @@ a {
   margin-right: 17px;
 }
 
-.switch {
-  opacity: 0.2;
-}
-
-.switch:hover {
-  opacity: 0.4;
-}
-
-.switch:active {
-  opacity: 1;
-}
-
 .breadcrumbs-main:hover,
 .breadcrumbs-catalog:hover,
 .breadcrumbs-item:hover {
@@ -1488,6 +1498,8 @@ a {
 .breadcrumbs-item:active {
   opacity: 0.1;
 }
+
+
 
 .filter {
   position: relative;
@@ -1530,14 +1542,22 @@ a {
 }
 
 .sorting {
+  position: relative;
   display: flex;
   align-items: center;
   background: #ebebeb;
 }
 
+.sorting:before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+}
+
 .catalog-sort {
   margin-left: 74px;
-  margin-right: 55px;
+  margin-right: 20px;
   font-family: Gilroy, sans-serif;
   text-transform: uppercase;
   font-size: 16px;
@@ -1548,6 +1568,7 @@ a {
 }
 
 .sort-by {
+  padding-bottom: 6px;
   font-family: OpenSans, sans-serif;
   font-size: 14px;
   line-height: 1.29;
@@ -1556,7 +1577,7 @@ a {
 }
 
 .sort-by-type {
-  margin: 0px 31px 0px 29px;
+  margin: 0px 30px 0px 30px;
 }
 
 .sort-by:hover {
@@ -1695,6 +1716,8 @@ a {
 }
 
 .add-to-compare {
+  padding-left: 30px;
+
   font-family: OpenSans, sans-serif;
   font-size: 13px;
   font-weight: 300;
@@ -1767,6 +1790,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   position: fixed;
+  box-sizing: border-box;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1841,12 +1865,25 @@ input [type="text"]::placeholder {
 .button-pop-up {
   display: block;
   position: absolute;
-  bottom: 80px;
+  bottom: 50px;
 }
 
 .appointment-text {
   display: block;
   margin-bottom: 13px;
+}
+
+.pop-up-close {
+  padding: 0;
+
+  position: absolute;
+  top: 22px;
+  right: 22px;
+
+  background: none ;
+  border: none;
+
+  opacity: 0.5;
 }
 
 
