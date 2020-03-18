@@ -85,7 +85,7 @@ a {
 .header-nav-catalog {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .logo-device:hover {
@@ -734,7 +734,7 @@ a {
   margin-bottom: 45px;
 }
 
-.about-list-line:before,
+.about-list-line::before,
 .about-list-avtotrading:before,
 .about-list-ecspedition:before {
   content: "";
@@ -747,15 +747,15 @@ a {
   border-radius: 50%;
 }
 
-.about-list-line:before {
+.about-list-line::before {
   top: 360px;
 }
 
-.about-list-avtotrading:before {
+.about-list-avtotrading::before {
   top: 400px;
 }
 
-.about-list-ecspedition:before {
+.about-list-ecspedition::before {
   top: 440px;
 }
 
@@ -1306,8 +1306,12 @@ a {
   text-align: center;
   background: linear-gradient(transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
   min-height: 40px;
-  width: 222px;
+  width: 200px;
+
   padding-top: 3px;
+  margin-top: 30px;
+  margin-left: 60px;
+
 }
 
 .button-submit:hover {
@@ -1328,12 +1332,22 @@ a {
   background: linear-gradient(90deg, rgba(235, 235, 235, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
 }
 
+.catalog-wrapper::before {
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  min-height: 65px;
+
+  background: linear-gradient(90deg, rgba(217,217,217,1) 33%, rgba(235,235,235,1) 33%, rgba(235,235,235,1) 100%);
+}
+
 .catalog-container {
   display: flex;
 }
 
 .catalog-wrap {
-  padding-top: 75px;
+  padding-top: 70px;
   padding-left: 70px;
   background: #ffffff;
   display: flex;
@@ -1355,10 +1369,32 @@ a {
   margin: 0;
   padding: 0;
 
-  margin-top: 90px;
+  margin-top: 83px;
   margin-left: 60px;
 
   border: none;
+}
+
+.filter::before {
+  content: "";
+
+  width: 199px;
+
+  position: absolute;
+  border: 1px solid #000000;
+  top: 135px;
+  left: 60px;
+}
+
+.filter::after {
+  content: "";
+
+  width: 199px;
+
+  position: absolute;
+  border: 1px solid #000000;
+  top: 275px;
+  left: 60px;
 }
 
 .range-filter {
@@ -1481,12 +1517,12 @@ a {
 }
 
 .arrow {
-  margin-left: 16px;
-  margin-right: 19px;
+  margin-left: 11px;
+  margin-right: 20px;
 }
 
 .arrow-catalog {
-  margin-left: 18px;
+  margin-left: 12px;
   margin-right: 17px;
 }
 
@@ -1504,6 +1540,7 @@ a {
 
 
 
+
 .filter {
   position: relative;
   min-width: 328px;
@@ -1517,10 +1554,32 @@ a {
   flex-direction: column;
 }
 
+.filter-color label {
+  line-height: 2.92;
+  letter-spacing: 0.14px;
+}
+
+.filter-bluetooth {
+  line-height: 2.86;
+  letter-spacing: 0.14px;
+}
+
 .filter-bluetooth {
   display: flex;
   flex-direction: column;
 }
+
+.filter-bluetooth::before {
+  content: "";
+
+  width: 199px;
+
+  position: absolute;
+  border: 1px solid #000000;
+  top: 560px;
+  left: 60px;
+}
+
 
 .catalog-filter-color {
   margin: 0;
@@ -1529,13 +1588,15 @@ a {
 }
 
 .catalog-filter {
-  margin-left: 60px;
+  min-height: 33px;
+
+  margin-left: 62px;
   font-family: Gilroy, sans-serif;
   background: #d9d9d9;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 800;
-  line-height: 1.5;
+  line-height: 2;
   letter-spacing: 3.2px;
   color: #000000;
 }
@@ -1549,6 +1610,8 @@ a {
   position: relative;
   display: flex;
   align-items: center;
+
+  min-height: 65px;
   background: #ebebeb;
 }
 
@@ -1597,7 +1660,9 @@ a {
 /*checkbox*/
 
 .color-title {
-  margin-bottom: 30px;
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 17px;
 }
 
 .price-title,
@@ -1611,15 +1676,25 @@ a {
   color: #000000;
 }
 
+.tehno-title {
+  margin: 0;
+  margin-top: 32px;
+  margin-bottom: 5px;
+}
+
 .checkbox-title {
   position: relative;
-  padding-left: 30px;
+  padding-left: 39px;
   font-family: OpenSans, sans-serif;
   font-size: 14px;
   font-weight: 300;
-  line-height: 2.86;
+  line-height: 2.9;
   letter-spacing: 0.14px;
   color: #000000;
+}
+
+.filter-bluetooth label {
+  align-items: center;
 }
 
 .check__input {
@@ -1632,9 +1707,12 @@ a {
 .check-box {
   position: absolute;
   left: 0;
+  top: 10px;
+
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
 }
 
 .check__input:checked + .check-box {
@@ -1649,6 +1727,7 @@ a {
 
 .check__input:checked + .check-radio {
   position: absolute;
+  top: 5px;
   left: 0;
   width: 25px;
   height: 25px;
@@ -1657,6 +1736,7 @@ a {
 
 .check__input + .check-radio {
   position: absolute;
+  top: 5px;
   left: 0;
   width: 25px;
   height: 25px;
@@ -1687,6 +1767,14 @@ a {
   top: 45px;
 }
 
+.product-wrap {
+  width: 360px;
+}
+
+.product-wrap:nth-child(2n+1) {
+  margin-right: 40px;
+}
+
 .product-item::before:hover {
   visibility: hidden;
 }
@@ -1697,14 +1785,6 @@ a {
 
 .product-item img:hover {
   opacity: 0.7;
-}
-
-.product-item-selfie {
-  margin-right: 33px;
-}
-
-.product-item-stick {
-  margin-right: 33px;
 }
 
 .product-item:hover .product-buttons {
@@ -1768,18 +1848,40 @@ a {
 
 .items-catalog {
   position: relative;
+
+  background: #ffffff;
 }
 
 .page-button {
-  position: relative;
-  display: block;
+  font-family: Gilroy;
+  font-size: 16px;
 
+  display: flex;
   width: 759px;
   min-height: 70px;
-  left: 70px;
   background-color: #ebebeb;
 
+  margin-bottom: 70px;
+  margin-left: 70px;
 }
+
+.back-button,
+.numbers,
+.forward-button {
+  display: flex;
+  margin-top: 25px;
+}
+
+.back-button {
+  margin-left: 35px;
+  margin-right: 240px;
+}
+
+.forward-button {
+  margin-left: 230px;
+}
+
+
 
 .product-title {
   font-family: Gilroy, sans-serif;
@@ -1791,10 +1893,18 @@ a {
 }
 
 .product-title-text {
-  margin-bottom: 70px;
+  width: 250px;
+  margin-bottom: 50px;
+}
+
+.product-title-profesional {
+  width: 200px;
 }
 
 .product-price {
+  width: 250px;
+  margin-left: 50px;
+
   font-family: Gilroy, sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -1814,6 +1924,16 @@ a {
   line-height: 1.5;
   letter-spacing: 3.2px;
   color: #000000;
+}
+
+.forward-button,
+.back-button {
+  text-transform: uppercase;
+}
+
+.numbers-middle {
+  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .numbers {
@@ -1839,7 +1959,6 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*margin-left: 240px;*/
   color: #000000;
   width: 960px;
   height: 553px;
