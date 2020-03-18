@@ -1881,9 +1881,12 @@ a {
   margin-left: 230px;
 }
 
-
+.product-title-text {
+  margin-bottom: 45px;
+}
 
 .product-title {
+  display: flex;
   font-family: Gilroy, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -1892,18 +1895,10 @@ a {
   color: #000000;
 }
 
-.product-title-text {
-  width: 250px;
-  margin-bottom: 50px;
-}
-
-.product-title-profesional {
-  width: 200px;
-}
-
 .product-price {
-  width: 250px;
-  margin-left: 50px;
+  flex-shrink: 0;
+  width: 100px;
+  text-align: right;
 
   font-family: Gilroy, sans-serif;
   font-size: 16px;
@@ -1911,6 +1906,10 @@ a {
   line-height: 1.5;
   letter-spacing: 0.16px;
   color: #464646;
+}
+
+.product-title-bottom {
+  margin: 0;
 }
 
 /*next page and forward button*/
